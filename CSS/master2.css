@@ -14,8 +14,10 @@ nav{
     position: relative;
     display: flex;
     align-items: center;
-    gap: 8rem;
-    padding: .5rem 0 .5rem 1rem;
+    justify-content: space-between;
+    align-self: stretch;
+    /* gap: 8rem; */
+    padding: .5rem 1rem .5rem 1rem;
     background-color: #10294B;
 }
 
@@ -44,12 +46,23 @@ h2{
 }
 
 h3{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 p{
-    font-size: .75rem;
+    font-size: .85rem;
     font-weight: 400;
+    line-height: 1.25rem;
+}
+
+section ul{
+    padding: 0;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+section li{
+    border-bottom: 1px solid #10294B;
 }
 
 footer{
@@ -83,7 +96,9 @@ footer{
     flex-direction: column;
     gap: 10px;
     margin: .5rem 1rem;
+    /* max-width: 440px; */
 }
+
 .nav-buttons a{
     display: block;
     text-align: center;
@@ -93,4 +108,8 @@ footer{
     font-size: .80rem;
     font-weight: 600;
     color: #10294B;
+}
+
+.nav-buttons h3 {
+    margin: .5rem 1rem;
 }
