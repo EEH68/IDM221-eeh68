@@ -55,13 +55,13 @@ p{
     line-height: 1.25rem;
 }
 
-section ul{
+ul{
     padding: 0;
     list-style: none;
     margin-right: 1rem;
 }
 
-section li{
+.separation ul li{
     border-bottom: 1px solid #10294B;
 }
 
