@@ -1,3 +1,4 @@
+
 @font-face{
     font-family: 'LibreFranklin';
     src: url('../Fonts/LibreFranklin.ttf') format('truetype');
@@ -6,16 +7,15 @@
     font-display: swap;
   }
 
-  html {
+html {
     scroll-behavior: smooth;
-}
-
-body{
     font-family: 'LibreFranklin';
 }
 
+/* General Styling */
+
 nav{
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,20 +42,20 @@ h1{
 
 h2{
     font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.home h2{
-    color: black;
-    text-align: center;
-}
-
-h3{
     font-size: 1.25rem;
 }
 
+header h2{
+    text-align: center;
+
+}
+
+h3{
+    font-size: 1rem;
+}
+
 p{
-    font-size: .85rem;
+    font-size: .80rem;
     font-weight: 400;
     line-height: 1.25rem;
 }
@@ -64,6 +64,7 @@ ul{
     padding: 0;
     list-style: none;
     margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .separation ul li{
@@ -75,7 +76,15 @@ footer{
     color: white;
     text-align: center;
     margin-top: 1rem;
-    padding: .5rem 0 .5rem 1rem;
+    padding: .5rem 1rem
+}
+
+/* Page Specific Styling */
+
+/* HOME */
+.spaced{
+    color: black;
+    padding-bottom: 20px;
 }
 
 .hero{
@@ -86,6 +95,8 @@ footer{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* SUB-PAGES */
+
 .sub-hero{
     object-fit: cover;
     object-position: center;
@@ -93,6 +104,44 @@ footer{
     height: 249px; 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* NEWS*/
+
+.news-gray{
+    background-color:#DADADA;    
+    padding: 20px 20px
+}
+
+.news-white{
+    padding: 20px 20px;
+}
+
+.subhead{
+    margin-left: 1rem;
+    margin-bottom: -5px;
+}
+
+.news{
+    align-content: center;
+    margin:0;
+    padding:0
+}
+
+/* SCHEDULE */
+
+.separation h2{
+    text-align: center;
+    background-color: #10294B;
+    color: #F7C844;
+    padding: 1rem .5rem;
+}
+
+/* DONATE */
+.input{
+    text-align: center;
+}
+
+/* Buttons */
 
 .nav-buttons ul{
     list-style: none;
